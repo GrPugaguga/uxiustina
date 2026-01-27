@@ -5,7 +5,7 @@ export default function Home() {
     <div className="min-h-screen bg-background-white pt-32.5 sm:pt-54.25 px-5 sm:px-25">
       <div className="flex flex-col gap-28.25 mb-28.5 items-center">
         {/* Текстовый блок */}
-        <div className="w-84 sm:w-217.5 text-left sm:text-center">
+        <div className="sm:w-217.5 text-left sm:text-center">
           <h1 className="text-[26px] font-medium leading-7.5 -tracking-[0.52px]">
             <span className="text-black">Привет! Я Юстина, UX/UI дизайнер.</span>
             <br />
