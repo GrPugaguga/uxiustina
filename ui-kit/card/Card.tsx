@@ -12,7 +12,7 @@ export default function Card(props: {
                 <h3 className="text-[20px] font-semibold text-black leading-[100%]">
                     {props.title}
                 </h3>
-                <p className="text-[18px] text-grey-txt-primary leading-[100%]">
+                <p className="text-4 sm:text-[18px] text-grey-txt-primary leading-[100%]">
                     {props.description}
                 </p>
             </div>
