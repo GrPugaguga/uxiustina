@@ -3,7 +3,8 @@ import {
   ActionButton,
   AcceptButton,
   AccentButton,
-  HeaderLink
+  HeaderLink,
+  Card
  } from '@/ui-kit'
 
 export default function Home() {
@@ -14,6 +15,11 @@ export default function Home() {
       <AccentButton text="Написать в телеграмм"/>
       <ArrowButton type="left"/>
       <HeaderLink text="CV" icon={true}/>
+      <Card
+        image="/image/main_LiftUp.png"
+        title="LiftUp"
+        description="Фитнес-приложение с умным помощником"
+      />
     </div>
   );
 }
