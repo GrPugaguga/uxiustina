@@ -9,7 +9,7 @@ export default function Home() {
           <h1 className="text-[26px] font-medium leading-7.5 -tracking-[0.52px]">
             <span className="text-black">Привет! Я Юстина, UX/UI дизайнер.</span>
             <br />
-            <span className="text-grey-txt-secondary">Решаю комплексные задачи через пользовательские исследования, аналитику и системный подход в проектировании</span>
+            <span className="text-grey-txt-secondary text-[24px]">Решаю комплексные задачи через пользовательские исследования, аналитику и системный подход в проектировании</span>
           </h1>
         </div>
 
