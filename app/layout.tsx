@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${raleway.variable} antialiased font-raleway`}
+        className={`${raleway.variable} antialiased font-raleway p-0`}
       >
         <div className="fixed top-0 sm:top-10 left-0 right-0 z-50 flex justify-center">
           <Header />
