@@ -36,7 +36,7 @@ export default function Header() {
             </header>
 
             {/* Mobile Header */}
-            <header className="sm:hidden w-full bg-background-white border border-grey-bg-light pt-10 pr-5 pb-2.5 pl-5 z-50">
+            <header className="sm:hidden w-full bg-background-white border-b border-grey-bg-light pt-10 pr-5 pb-2.5 pl-5 z-50">
                 <div className="flex items-center justify-between">
                     <div>
                         {!isHomePage && (
