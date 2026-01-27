@@ -20,11 +20,13 @@ export default function Home() {
             image="/image/main_LiftUp.png"
             title="LiftUp"
             description="Фитнес-приложение с умным помощником"
+            href="/liftup"
           />
           <Card
             image="/image/main_LiftUp.png"
             title="LiftUp"
             description="Фитнес-приложение с умным помощником"
+            href="/liftup"
           />
         </div>
       </div>

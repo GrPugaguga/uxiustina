@@ -1,12 +1,14 @@
+import Link from "next/link";
 import CardImage from "./CardImage";
 
 export default function Card(props: {
     image: string
     title: string
     description: string
+    href: string
 }) {
     return (
-        <div className="flex flex-col gap-3">
+        <Link href={props.href} className="flex flex-col gap-3">
             <CardImage src={props.image} alt={props.title} />
             <div className="flex flex-col gap-1">
                 <h3 className="text-[20px] font-semibold text-black leading-[100%]">
@@ -16,6 +18,6 @@ export default function Card(props: {
                     {props.description}
                 </p>
             </div>
-        </div>
+        </Link>
     )
 }
