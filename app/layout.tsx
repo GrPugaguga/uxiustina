@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import {Raleway } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import { PrivacyAndCookies } from "@/ui-kit";
 
 const raleway = Raleway({
   weight: ["500", "600"],
@@ -28,6 +29,9 @@ export default function RootLayout({
           <Header />
         </div>
         {children}
+        <div className="bottom-200 left-0 right-0 flex justify-center">
+          <PrivacyAndCookies />
+        </div>
       </body>
     </html>
   );
