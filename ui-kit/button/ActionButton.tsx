@@ -5,11 +5,12 @@ export default function ActionButton(props: {
     text: string
     icon?: boolean
     onClick?: () => void
+    className?: string
 }) {
     return (
         <button
             onClick={props.onClick}
-            className={`${buttonBase} text-black text-4 leading-5.5 hover:bg-grey-bg-hover active:bg-grey-bg-pressed bg-grey-bg-primary px-5 py-3 flex items-center gap-2`}
+            className={`${buttonBase} text-black text-4 leading-5.5 hover:bg-grey-bg-hover active:bg-grey-bg-pressed bg-grey-bg-primary px-5 py-3 flex items-center gap-2 w-fit ${props.className}`}
         >
             {props.icon && <BackIcon />}
             {props.text}
