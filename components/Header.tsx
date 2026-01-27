@@ -20,7 +20,7 @@ export default function Header() {
             {/* Desktop Header */}
             <header className="hidden sm:flex bg-grey-bg-light py-3 px-10 rounded-[20px] border border-grey-bg-primary backdrop-blur-[20px] items-center gap-21.5 w-max">
                 <div>
-                    <HeaderLink text="Юстина Дзюба" />
+                    <HeaderLink text={isHomePage ? "Юстина Дзюба" : "На главную"} onClick={() => {if(!isHomePage){handleHomeClick()}}} />
                 </div>
 
                 <div className="flex items-center gap-5">
@@ -41,7 +41,7 @@ export default function Header() {
                     <div>
                         {!isHomePage && (
                             <span onClick={handleHomeClick} className="text-4 font-medium text-black leading-5.5 cursor-pointer">
-                                На главную страницу
+                                На главную
                             </span>
                         )}
                     </div>
