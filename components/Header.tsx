@@ -13,7 +13,7 @@ export default function Header() {
                 <HeaderLink text="CV" icon={true} />
             </div>
 
-            <div className="flex items-center gap-1.25">
+            <div className="flex items-center">
                 <HeaderLink text="Telegram" />
                 <HeaderLink text="Email" />
             </div>

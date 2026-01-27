@@ -21,5 +21,7 @@
 body {
   background: var(--background-white);
   color: var(--grey-txt-primary);
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0;
 }

@@ -4,13 +4,9 @@ import "./globals.css";
 import Header from "@/components/Header";
 
 const raleway = Raleway({
-  variable: "--font-raleway",
+  weight: "500",
   subsets: ["latin"],
-});
-
-const geistMono = Raleway({
   variable: "--font-raleway",
-  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -26,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${raleway.variable} ${geistMono.variable} antialiased`}
+        className={`${raleway.variable} antialiased font-raleway`}
       >
         <div className="fixed top-10 left-0 right-0 z-50 flex justify-center">
           <Header />
