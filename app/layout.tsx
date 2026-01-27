@@ -25,7 +25,7 @@ export default function RootLayout({
       <body
         className={`${raleway.variable} antialiased font-raleway`}
       >
-        <div className="fixed top-10 left-0 right-0 z-50 flex justify-center">
+        <div className="fixed top-0 sm:top-10 left-0 right-0 z-50 flex justify-center">
           <Header />
         </div>
         {children}
