@@ -1,10 +1,20 @@
+import Image from "next/image";
 
-export default function AcceptButton(props: {
-    text: string
+export default function ArrowButton(props: {
+    type: 'left' | 'right'
+    onClick?: () => void
 }) {
     return (
-        <button className="text-black text-[12px] leading-5 hover:bg-grey-txt-secondary rounded-xl bg-background-white text-center font-size-[12px] w-21.5 h-8">
-            {props.text}
+        <button
+            onClick={props.onClick}
+            className="w-11.25 h-11.25 rounded-full bg-background-white hover:bg-grey-bg-hover active:bg-grey-bg-pressed cursor-pointer flex items-center justify-center"
+        >
+            <Image
+                src={`/svg/${props.type}.svg`}
+                alt={props.type}
+                width={15}
+                height={15}
+            />
         </button>
     )
 }

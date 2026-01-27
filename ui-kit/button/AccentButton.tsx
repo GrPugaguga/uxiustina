@@ -1,9 +1,14 @@
+import { buttonBase } from "./styles";
 
 export default function AccentButton(props: {
     text: string
+    onClick?: () => void
 }) {
     return (
-        <button className="text-background-white text-4 text-center leading-5.5 hover:bg-accent-hover active:bg-accent-pressed rounded-5 bg-accent-primary font-size-[12px] px-5 py-3">
+        <button
+            onClick={props.onClick}
+            className={`${buttonBase} text-background-white text-4 leading-5.5 hover:bg-accent-hover active:bg-accent-pressed bg-accent-primary px-5 py-3`}
+        >
             {props.text}
         </button>
     )

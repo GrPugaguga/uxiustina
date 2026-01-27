@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import {Raleway } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const raleway = Raleway({
   variable: "--font-raleway",
@@ -27,6 +28,9 @@ export default function RootLayout({
       <body
         className={`${raleway.variable} ${geistMono.variable} antialiased`}
       >
+        <div className="fixed top-10 left-0 right-0 z-50 flex justify-center">
+          <Header />
+        </div>
         {children}
       </body>
     </html>

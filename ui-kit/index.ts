@@ -1,5 +1,2 @@
-import * as buttons from './button'
-
-export default {
-    ...buttons
-}
+export * from './button';
+export * from './link';
