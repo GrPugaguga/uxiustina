@@ -29,7 +29,7 @@ export default function RootLayout({
           <Header />
         </div>
         {children}
-        <div className="bottom-200 left-0 right-0 flex justify-center">
+        <div className="mb-4 left-0 right-0 flex justify-center">
           <PrivacyAndCookies />
         </div>
       </body>
