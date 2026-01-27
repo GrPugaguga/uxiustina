@@ -19,6 +19,7 @@ export default function UIKitDemo() {
         image="/image/main_LiftUp.png"
         title="LiftUp"
         description="Фитнес-приложение с умным помощником"
+        href="/liftup"
       />
     </div>
   );
