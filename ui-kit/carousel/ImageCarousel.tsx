@@ -21,13 +21,14 @@ export default function ImageCarousel(props: {
 
     const isFirst = currentIndex === 0;
     const isLast = currentIndex === props.images.length - 1;
+    const isSingle = props.images.length === 1;
 
     return (
         <div
             className="w-full bg-grey-bg-primary border border-grey-stroke rounded-[20px] relative flex items-center justify-center p-5"
             style={{ height: `${props.height}px` }}
         >
-            {!isFirst && (
+            {!isSingle && !isFirst && (
                 <div className="absolute left-4 z-10">
                     <ArrowButton type="left" onClick={handlePrev} />
                 </div>
@@ -42,15 +43,17 @@ export default function ImageCarousel(props: {
                 />
             </div>
 
-            {!isLast && (
+            {!isSingle && !isLast && (
                 <div className="absolute right-4 z-10">
                     <ArrowButton type="right" onClick={handleNext} />
                 </div>
             )}
 
-            <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-10">
-                <CarouselMenu total={props.images.length} current={currentIndex} />
-            </div>
+            {!isSingle && (
+                <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-10">
+                    <CarouselMenu total={props.images.length} current={currentIndex} />
+                </div>
+            )}
         </div>
     );
 }

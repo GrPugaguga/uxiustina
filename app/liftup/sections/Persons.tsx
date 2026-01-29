@@ -11,8 +11,8 @@ export default function Persons() {
 
   return (
     <div className="flex flex-col gap-35">
-        <div className="flex flex-row gap-69.5 justify-between">
-            <div className="flex flex-col gap-10">
+        <div className="grid grid-cols-5 gap-7">
+            <div className="col-span-2 flex flex-col gap-10">
                 <BlockText title="Персоны">
                     Выявлена ключевая персона — Иван, так как он наиболее полно отражает основную проблему аудитории.
                 </BlockText>
@@ -28,11 +28,11 @@ export default function Persons() {
             <Image
                 src="/image/LiftUp/sections/person/person.png"
                 alt="Person"
-                width={800}
-                height={600}
-                className="object-contain"
+                width={0}
+                height={0}
+                sizes="40vw"
+                className="col-start-4 col-span-2 w-full h-auto"
             />
-
         </div>
 
         <PrivacyText title="CJM & JTBD">

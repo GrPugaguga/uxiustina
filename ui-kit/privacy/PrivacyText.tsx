@@ -3,14 +3,14 @@ export default function PrivacyText(props: {
     children?: React.ReactNode
 }) {
     return (
-        <div className="flex flex-col sm:flex-row gap-2.5 sm:gap-0 justify-between w-full">
-            <div className="sm:w-2/5">
+        <div className="grid grid-cols-1 sm:grid-cols-5 gap-2.5 sm:gap-7 w-full">
+            <div className="sm:col-span-2">
                 <h2 className="text-6 font-semibold leading-6.5 text-black">
                     {props.title}
                 </h2>
             </div>
             {props.children && (
-                <div className="sm:w-3/5 text-4 font-medium leading-5.5 text-black">
+                <div className="sm:col-span-3 text-4 font-medium leading-5.5 text-black">
                     {props.children}
                 </div>
             )}

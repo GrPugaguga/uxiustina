@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ImageCarousel } from "@/ui-kit";
 
 export default function IArch() {
   return (
@@ -6,14 +6,10 @@ export default function IArch() {
         <h2 className="text-6 font-semibold leading-6.5 text-black">
             Информационная архитектура
         </h2>
-        <div className="w-max-310 w-full h-162.5 bg-grey-bg-primary border border-grey-stroke rounded-[20px] relative overflow-hidden">
-            <Image
-                src="/image/LiftUp/sections/iarch/Rectangle (1).png"
-                alt="Информационная архитектура"
-                fill
-                className="object-scale-down"
-            />
-        </div>
+        <ImageCarousel
+            images={["/image/LiftUp/sections/iarch/Rectangle (1).png"]}
+            height={650}
+        />
     </div>
   );
 }
