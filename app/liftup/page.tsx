@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { Context, Persons, JTBD, IArch, DidntEnter, UsableFirstTest, Actions, PainAndSolutions } from "./sections";
+import { Context, Persons, JTBD, IArch, DidntEnter, UsableFirstTest, UsableSecondTest, Actions, PainAndSolutions } from "./sections";
 
 export default function LiftUp() {
   return (
@@ -22,6 +22,7 @@ export default function LiftUp() {
         <IArch />
         <UsableFirstTest />
         <PainAndSolutions />
+        <UsableSecondTest />
         <DidntEnter />
         <Actions />
         <div></div>
