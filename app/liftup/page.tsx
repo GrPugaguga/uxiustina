@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import Context from "./sections/Context";
+import { Context, Persons } from "./sections";
 
 export default function LiftUp() {
   return (
@@ -17,6 +17,7 @@ export default function LiftUp() {
       {/* Content Block */}
       <div className="mt-15 sm:mt-30 flex flex-col gap-15 sm:gap-30 w-full items-center">
         <Context/>
+        <Persons/>
         <div></div>
       </div>
     </div>
