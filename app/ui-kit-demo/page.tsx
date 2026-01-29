@@ -4,7 +4,8 @@ import {
   AcceptButton,
   AccentButton,
   HeaderLink,
-  Card
+  Card,
+  ImageCarousel
 } from '@/ui-kit'
 
 export default function UIKitDemo() {
@@ -21,6 +22,17 @@ export default function UIKitDemo() {
         description="Фитнес-приложение с умным помощником"
         href="/liftup"
       />
+      <div className="w-full max-w-4xl">
+        <ImageCarousel
+          images={[
+            "/image/LiftUp/sections/context/12.png",
+            "/image/LiftUp/sections/context/25.png",
+            "/image/LiftUp/sections/context/32.png",
+            "/image/LiftUp/sections/context/42.png"
+          ]}
+          height={500}
+        />
+      </div>
     </div>
   );
 }

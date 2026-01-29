@@ -1,4 +1,5 @@
-import { PrivacyText } from "@/ui-kit";
+import { PrivacyText, ImageCarousel } from "@/ui-kit";
+
 
 export default function Context() {
   return (
@@ -10,6 +11,15 @@ export default function Context() {
         <PrivacyText title="Исследования">
             Проведен комплексный ресерч через Google Forms собраны количественные данные, на основе которых выделены ключевые сегменты и созданы персоны. Далее проведены глубинные интервью и кабинетное исследование, что позволило детализировать боли, потребности и сценарии использования продукта.
         </PrivacyText>
+        <ImageCarousel
+          images={[
+            "/image/LiftUp/sections/context/12.png",
+            "/image/LiftUp/sections/context/25.png",
+            "/image/LiftUp/sections/context/32.png",
+            "/image/LiftUp/sections/context/42.png"
+          ]}
+          height={500}
+        />
     </>
   );
 }
