@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { Context, Persons } from "./sections";
+import { Context, Persons, JTBD, IArch, DidntEnter, UsableFirstTest, Actions } from "./sections";
 
 export default function LiftUp() {
   return (
@@ -18,6 +18,11 @@ export default function LiftUp() {
       <div className="mt-15 sm:mt-30 flex flex-col gap-15 sm:gap-30 w-full items-center">
         <Context/>
         <Persons/>
+        <JTBD />
+        <IArch />
+        <UsableFirstTest />
+        <DidntEnter />
+        <Actions />
         <div></div>
       </div>
     </div>

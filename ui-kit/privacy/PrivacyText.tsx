@@ -3,7 +3,7 @@ export default function PrivacyText(props: {
     children?: React.ReactNode
 }) {
     return (
-        <div className="flex flex-col sm:flex-row gap-2.5 sm:gap-0">
+        <div className="flex flex-col sm:flex-row gap-2.5 sm:gap-0 justify-between w-full">
             <div className="sm:w-2/5">
                 <h2 className="text-6 font-semibold leading-6.5 text-black">
                     {props.title}

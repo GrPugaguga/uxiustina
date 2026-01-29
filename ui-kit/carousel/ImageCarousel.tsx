@@ -24,7 +24,7 @@ export default function ImageCarousel(props: {
 
     return (
         <div
-            className="w-full bg-grey-bg-primary border border-grey-stroke rounded-[20px] relative flex items-center justify-center"
+            className="w-full bg-grey-bg-primary border border-grey-stroke rounded-[20px] relative flex items-center justify-center p-5"
             style={{ height: `${props.height}px` }}
         >
             {!isFirst && (
@@ -38,7 +38,7 @@ export default function ImageCarousel(props: {
                     src={props.images[currentIndex]}
                     alt={`Image ${currentIndex + 1}`}
                     fill
-                    className="object-contain"
+                    className="object-scale-down"
                 />
             </div>
 
