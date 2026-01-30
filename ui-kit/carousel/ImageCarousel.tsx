@@ -45,7 +45,7 @@ export default function ImageCarousel(props: {
                     </div>
                 )}
 
-                <div className="relative flex items-center justify-center h-full w-[74.2%] max-w-230">
+                <div className="relative flex items-center justify-center h-full w-full sm:w-[74.2%] sm:max-w-230">
                     <Image
                         src={props.images[0]}
                         alt={`Image 1`}
