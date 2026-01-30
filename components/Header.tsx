@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { HeaderLink } from "@/ui-kit";
 import MenuIcon from "@/public/svg/mobile/menu";
@@ -11,9 +11,12 @@ export default function Header() {
     const router = useRouter();
     const isHomePage = pathname === '/';
 
+    useEffect(() => {
+        setIsMenuOpen(false);
+    }, [pathname]);
+
     const handleHomeClick = () => {
         router.push('/');
-        setIsMenuOpen(false)
     };
 
     return (
