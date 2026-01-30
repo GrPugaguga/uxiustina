@@ -13,10 +13,10 @@ export default function Context() {
         </PrivacyText>
         <ImageCarousel
           images={[
-            "/image/LiftUp/sections/context/12.png",
-            "/image/LiftUp/sections/context/25.png",
-            "/image/LiftUp/sections/context/32.png",
-            "/image/LiftUp/sections/context/42.png"
+            "/image/LiftUp/sections/context/interview_1.png",
+            "/image/LiftUp/sections/context/result.png",
+            "/image/LiftUp/sections/context/interview_2.png",
+            "/image/LiftUp/sections/context/research.png"
           ]}
           height={650}
           mobileHeight={204}
