@@ -15,6 +15,7 @@ export default function JTBD() {
             "/image/LiftUp/sections/jtbd/JTBD(Преодолеть плато).png"
           ]}
           height={650}
+          mobileHeight={204}
         />
     </>
   );

@@ -10,8 +10,22 @@ export default function Persons() {
   ];
 
   return (
-    <div className="flex flex-col gap-35">
-        <div className="grid grid-cols-5 gap-7">
+    <>
+        {/* Mobile version */}
+        <PrivacyText title="Персоны" className="sm:hidden">
+            Выявлена ключевая персона — Иван, так как он наиболее полно отражает основную проблему аудитории.
+        </PrivacyText>
+        <PrivacyText title="Боли аудитории" className="sm:hidden">
+            {pains.map((pain, index) => (
+                <div key={index}>
+                    {index + 1}. {pain}
+                    {index < pains.length - 1 && <br />}
+                </div>
+            ))}
+        </PrivacyText>
+
+        {/* Desktop version */}
+        <div className="hidden sm:grid grid-cols-5 gap-7">
             <div className="col-span-2 flex flex-col gap-10">
                 <BlockText title="Персоны">
                     Выявлена ключевая персона — Иван, так как он наиболее полно отражает основную проблему аудитории.
@@ -38,7 +52,6 @@ export default function Persons() {
         <PrivacyText title="CJM & JTBD">
             На основе результатов количественных и качественных исследований были выведены базовые job statements, описывающие ключевые задачи пользователей на разных этапах взаимодействия с фитнес-продуктом. На основе этих job statements и CJM были выделены 8 ключевых пользовательских путей (JTBD), которые легли в основу дальнейшего проектирования сценариев
         </PrivacyText>
-
-    </div>
+    </>
   );
 }

@@ -3,7 +3,7 @@ export default function ProblemText(props: {
     children?: React.ReactNode
 }) {
     return (
-        <div className="flex flex-col gap-4 ">
+        <div className="flex flex-col gap-3 sm:gap-4 ">
             <div>
                 <h2 className="text-4 font-medium leading-6.5 text-grey-txt-primary">
                     {props.problem}
