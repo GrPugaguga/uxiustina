@@ -2,8 +2,8 @@ import { RowImage, ProblemText } from "@/ui-kit"
 
 export default function Progress() {
     return (
-        <div className="grid grid-cols-5 gap-7">
-            <div className="col-span-2 flex flex-col gap-3">
+        <div className=" flex flex-col-reverse gap-5 sm:grid sm:grid-cols-5 sm:gap-7">
+            <div className="sm:col-span-2 flex flex-col gap-3">
                 <ProblemText problem="Отсутствие понимания прогресса">
                     Визуализация прогресса: графики, история тренировок, сравнение периодов, ии анализ с возможность внести изменения в программу
                 </ProblemText>
@@ -11,7 +11,7 @@ export default function Progress() {
                    Мотивация через реальные достижения и наглядный прогресс вместо игровых механик
                 </ProblemText>
             </div>
-            <div className="col-span-3">
+            <div className="sm:col-span-3">
                 <RowImage
                     images={[
                         "/image/LiftUp/sections/pain/а 1.png",

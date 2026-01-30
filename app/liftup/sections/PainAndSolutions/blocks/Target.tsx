@@ -2,7 +2,7 @@ import { RowImage, ProblemText } from "@/ui-kit"
 
 export default function Target() {
     return (
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col-reverse sm:flex-col gap-5 sm:gap-10">
             <ProblemText problem="Отсутствие системы целеполагания">
                 Внедрена «Постановка целей»: пользователь выбирает приоритет (сила, выносливость, рельеф) и задает метрики. Прогресс отслеживается через дашборды, что дает обратную связь и повышает мотивацию за счет наглядной эффективности тренировок.
             </ProblemText>
