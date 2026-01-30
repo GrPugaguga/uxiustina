@@ -2,7 +2,7 @@ import { RowImage, ProblemText } from "@/ui-kit"
 
 export default function Uncentrainty() {
     return (
-        <div className="flex flex-col gap-5 overflow-hidden sm:grid sm:grid-cols-5 sm:gap-7 sm:overflow-visible">
+        <div className="flex flex-col gap-5 sm:grid sm:grid-cols-5 sm:gap-7">
             <div className="sm:col-span-3">
                 <RowImage
                     images={[
