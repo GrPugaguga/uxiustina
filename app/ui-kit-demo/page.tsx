@@ -31,6 +31,7 @@ export default function UIKitDemo() {
             "/image/LiftUp/sections/context/42.png"
           ]}
           height={500}
+          mobileHeight={204}
         />
       </div>
     </div>
