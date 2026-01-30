@@ -18,7 +18,7 @@ export default function Context() {
             "/image/LiftUp/sections/context/32.png",
             "/image/LiftUp/sections/context/42.png"
           ]}
-          height={500}
+          height={650}
           mobileHeight={204}
         />
     </>
