@@ -21,17 +21,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <body
-        className={`${raleway.variable} antialiased font-raleway p-0`}
+        className={`${raleway.variable} antialiased font-raleway p-0  `}
       >
-        <div className="fixed top-0 sm:top-10 left-0 right-0 z-50 flex justify-center">
+        <div className="fixed top-0 sm:top-10 left-0 right-0 m-0 z-50 flex justify-center">
           <Header />
         </div>
-        <div className="flex align-middle justify-center max-w-360 m-auto">
+        <div className="flex align-middle justify-center max-w-360 sm:m-auto">
           {children}
         </div>
-        <div className="mb-4 left-0 right-0 flex justify-center">
+        <div className="mb-4 flex justify-center">
           <PrivacyAndCookies />
         </div>
       </body>
