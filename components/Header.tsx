@@ -13,6 +13,7 @@ export default function Header() {
 
     const handleHomeClick = () => {
         router.push('/');
+        setIsMenuOpen(false)
     };
 
     return (
