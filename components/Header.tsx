@@ -60,7 +60,7 @@ export default function Header() {
             {/* Mobile Menu Overlay */}
             {isMenuOpen && (
                 <div className="sm:hidden fixed inset-0 bg-background-white z-40 pt-24">
-                    <div className="mt-50 gap-4 flex flex-col items-center">
+                    <div className="mt-30 gap-4 flex flex-col items-center">
                         <HeaderLink text="CV" href="/cv.pdf" icon={true} external download />
                         <HeaderLink text="Behance" href="https://www.behance.net/4582f7ec" external />
                         <HeaderLink text="Telegram" href="https://t.me/uxiustina" external />
