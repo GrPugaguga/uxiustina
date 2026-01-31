@@ -4,7 +4,7 @@ import { Card, AccentButton } from '@/ui-kit';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background-white pt-32.5 sm:pt-54.25 px-5 sm:px-25">
+    <div className="min-h-screen bg-background-white pt-32.5 sm:pt-54.25">
       <div className="flex flex-col gap-28.25 mb-28.5 items-center">
         {/* Текстовый блок */}
         <div className="sm:w-217.5 text-left sm:text-center">

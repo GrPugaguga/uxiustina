@@ -28,7 +28,7 @@ export default function RootLayout({
         <div className="fixed top-0 sm:top-10 left-0 right-0 m-0 z-50 flex justify-center">
           <Header />
         </div>
-        <div className="flex align-middle justify-center max-w-360 sm:m-auto">
+        <div id="main-content" className="flex align-middle justify-center max-w-360 sm:m-auto px-5 sm:px-25">
           {children}
         </div>
         <div className="mb-4 flex justify-center">

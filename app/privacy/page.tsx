@@ -7,7 +7,7 @@ export default function Privacy() {
   const router = useRouter();
 
   return (
-    <div className="min-h-screen bg-background-white pt-32.5 sm:pt-55 px-5 sm:px-25 pb-28.5">
+    <div className="min-h-screen bg-background-white pt-32.5 sm:pt-55 pb-28.5">
       <div className="flex flex-col gap-10 sm:gap-24.5">
         <PrivacyText title="Политика конфиденциальности и использования cookies" />
 

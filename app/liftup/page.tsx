@@ -4,7 +4,7 @@ import { Context, Persons, JTBD, IArch, DidntEnter, UsableFirstTest, UsableSecon
 
 export default function LiftUp() {
   return (
-    <div className="min-h-screen pt-32.5 px-5 sm:px-25 bg-background-white flex flex-col items-center">
+    <div className="min-h-screen pt-32.5 bg-background-white flex flex-col items-center">
       {/* Hero Image */}
         <Image
           src="/image/LiftUp/liftUp_1.png"
