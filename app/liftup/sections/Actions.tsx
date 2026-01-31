@@ -10,19 +10,19 @@ export default function Actions() {
       <>
         {/* Mobile */}
         <div className="flex flex-col gap-5 pr-17.5 -mt-5 items-start w-full sm:hidden">
-            <AccentButton text="Написать в Telegram" />
-            <ActionButton text="Посмотреть кейс на Behance" />
+            <AccentButton text="Написать в Telegram" onClick={() => window.open('https://t.me/uxiustina', '_blank')} />
+            <ActionButton text="Посмотреть кейс на Behance" onClick={() => window.open('https://www.behance.net/gallery/241636771/UXUI-Mobile-App-LIFT-UP', '_blank')} />
         </div>
 
         {/* Desktop */}
-        <div className="hidden sm:grid grid-cols-5 gap-7 w-full">
+        <div className="hidden sm:grid grid-cols-5 w-full">
             <div className="col-span-2">
-                <ActionButton text="Вернуться" icon={true} onClick={() => router.back()} />
+                <ActionButton text="Вернуться" icon={true} onClick={() => router.back()} hideTextBelow={1100} />
             </div>
-            <div className="col-span-3 flex gap-5.5 justify-start">
-                <AccentButton text="Написать в Telegram" />
-                <ActionButton text="Написать на Email" />
-                <ActionButton text="Посмотреть кейс на Behance" />
+            <div className="col-span-3 flex gap-1 justify-between">
+                <AccentButton text="Написать в Telegram" onClick={() => window.open('https://t.me/uxiustina', '_blank')} />
+                <ActionButton text="Написать на Email" onClick={() => window.open('mailto:kllmvrd@gmail.com')} />
+                <ActionButton text="Посмотреть кейс на Behance" shortText="Кейс на Behance" shortTextBelow={1308} onClick={() => window.open('https://www.behance.net/gallery/241636771/UXUI-Mobile-App-LIFT-UP', '_blank')} />
             </div>
         </div>
       </>
