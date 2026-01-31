@@ -23,12 +23,14 @@ export default function Home() {
             title="LiftUp"
             description="Фитнес-приложение с умным помощником"
             href="/liftup"
+            priority
           />
           <Card
             image="/image/main_LiftUp.png"
             title="LiftUp"
             description="Фитнес-приложение с умным помощником"
             href="/liftup"
+            priority
           />
         </div>
       </div>

@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+const blurDataURL = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMCwsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgEDBAMBAAAAAAAAAAAAAQIDAAQRBRIhMQYTQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAAIDAQAAAAAAAAAAAAAAAAECAAMRIf/aAAwDAQACEQMRAD8AzLxzUNTvNYktr2+vLiCONAiTTvIqnJ5AYkA9VXWoADAYpSqZJbuoYkzCuf/Z";
+
 export default function RowImage(props: {
     images: string[]
     cols: number
@@ -22,6 +24,8 @@ export default function RowImage(props: {
                         height={455}
                         sizes="100vw"
                         className="w-[224] h-113.75"
+                        placeholder="blur"
+                        blurDataURL={blurDataURL}
                     />
                 ))}
             </div>
@@ -41,6 +45,8 @@ export default function RowImage(props: {
                         height={455}
                         sizes="100vw"
                         className="w-full h-auto"
+                        placeholder="blur"
+                        blurDataURL={blurDataURL}
                     />
                 ))}
             </div>

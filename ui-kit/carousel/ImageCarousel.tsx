@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { ArrowButton } from '@/ui-kit';
 import CarouselMenu from './CarouselMenu';
@@ -11,6 +11,16 @@ export default function ImageCarousel(props: {
     mobileHeight: number
 }) {
     const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        props.images.forEach((src) => {
+            const link = document.createElement('link');
+            link.rel = 'preload';
+            link.as = 'image';
+            link.href = src;
+            document.head.appendChild(link);
+        });
+    }, [props.images]);
 
     const handlePrev = () => {
         setCurrentIndex((prev) => Math.max(0, prev - 1));

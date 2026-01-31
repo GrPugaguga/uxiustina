@@ -6,10 +6,11 @@ export default function Card(props: {
     title: string
     description: string
     href: string
+    priority?: boolean
 }) {
     return (
         <Link href={props.href} className="flex flex-col gap-3">
-            <CardImage src={props.image} alt={props.title} />
+            <CardImage src={props.image} alt={props.title} priority={props.priority} />
             <div className="flex flex-col gap-1">
                 <h3 className="text-[20px] font-semibold text-black leading-[100%]">
                     {props.title}
