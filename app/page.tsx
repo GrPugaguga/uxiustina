@@ -1,3 +1,5 @@
+'use client';
+
 import { Card, AccentButton } from '@/ui-kit';
 
 export default function Home() {
@@ -15,7 +17,7 @@ export default function Home() {
         </div>
 
         {/* Works блок */}
-        <div className="flex flex-col sm:flex-row gap-8 items-center">
+        <div id="projects" className="flex flex-col sm:flex-row gap-8 items-center">
           <Card
             image="/image/main_LiftUp.png"
             title="LiftUp"

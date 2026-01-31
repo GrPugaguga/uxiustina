@@ -1,22 +1,24 @@
 'use client';
 
 import { useState, useEffect } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 import { HeaderLink } from "@/ui-kit";
 import MenuIcon from "@/public/svg/mobile/menu";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const pathname = usePathname();
-    const router = useRouter();
     const isHomePage = pathname === '/';
 
     useEffect(() => {
         setIsMenuOpen(false);
     }, [pathname]);
 
-    const handleHomeClick = () => {
-        router.push('/');
+    const handleProjectsClick = () => {
+        if (isHomePage) {
+            document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+        }
     };
 
     return (
@@ -24,18 +26,18 @@ export default function Header() {
             {/* Desktop Header */}
             <header className="hidden sm:flex bg-grey-bg-light py-3 px-10 rounded-[20px] border border-grey-bg-primary backdrop-blur-[20px] items-center gap-21.5 w-max">
                 <div>
-                    <HeaderLink text={isHomePage ? "Юстина Дзюба" : "На главную"} onClick={() => {if(!isHomePage){handleHomeClick()}}} />
+                    <HeaderLink text={isHomePage ? "Юстина Дзюба" : "На главную"} href="/" />
                 </div>
 
                 <div className="flex items-center gap-5">
-                    <HeaderLink text="Проекты" />
-                    <HeaderLink text="Behance" />
-                    <HeaderLink text="CV" icon={true} />
+                    <HeaderLink text="Проекты" href="/#projects" onClick={isHomePage ? handleProjectsClick : undefined} />
+                    <HeaderLink text="Behance" href="https://www.behance.net/4582f7ec" external />
+                    <HeaderLink text="CV" href="/cv.pdf" icon={true} external download />
                 </div>
 
                 <div className="flex items-center">
-                    <HeaderLink text="Telegram" />
-                    <HeaderLink text="Email" />
+                    <HeaderLink text="Telegram" href="https://t.me/uxiustina" external />
+                    <HeaderLink text="Email" href="mailto:kllmvrd@gmail.com" external />
                 </div>
             </header>
 
@@ -44,9 +46,9 @@ export default function Header() {
                 <div className="flex items-center justify-between">
                     <div>
                         {!isHomePage && (
-                            <span onClick={handleHomeClick} className="text-4 font-medium text-black leading-5.5 cursor-pointer">
+                            <Link href="/" className="text-4 font-medium text-black leading-5.5 cursor-pointer">
                                 На главную
-                            </span>
+                            </Link>
                         )}
                     </div>
                     <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="cursor-pointer">
@@ -59,10 +61,10 @@ export default function Header() {
             {isMenuOpen && (
                 <div className="sm:hidden fixed inset-0 bg-background-white z-40 pt-24">
                     <div className="mt-50 gap-4 flex flex-col items-center">
-                        <HeaderLink text="CV" icon={true} />
-                        <HeaderLink text="Behance" />
-                        <HeaderLink text="Telegram" />
-                        <HeaderLink text="Email" />
+                        <HeaderLink text="CV" href="/cv.pdf" icon={true} external download />
+                        <HeaderLink text="Behance" href="https://www.behance.net/4582f7ec" external />
+                        <HeaderLink text="Telegram" href="https://t.me/uxiustina" external />
+                        <HeaderLink text="Email" href="mailto:kllmvrd@gmail.com" external />
                     </div>
                 </div>
             )}
