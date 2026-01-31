@@ -66,7 +66,7 @@ export default function ActionButton(props: {
             )}
             <button
                 onClick={props.onClick}
-                className={`${buttonBase} ${hideId} ${shortId} text-black text-4 leading-5.5 hover:bg-grey-bg-hover active:bg-grey-bg-pressed bg-grey-bg-primary px-5 py-3 flex items-center gap-2.5 w-fit ${props.className}`}
+                className={`${buttonBase} ${hideId} ${shortId} text-black text-4 leading-5.5 hover:bg-grey-bg-hover active:bg-grey-bg-pressed bg-grey-bg-primary border border-grey-stroke px-5 py-3 flex items-center gap-2.5 w-fit ${props.className}`}
             >
                 {props.icon && <BackIcon />}
                 {renderText()}
