@@ -15,9 +15,11 @@ export default function Actions() {
         </div>
 
         {/* Desktop */}
-        <div className="hidden sm:flex w-full justify-between">
-            <ActionButton text="Вернуться" icon={true} onClick={() => router.back()} />
-            <div className="flex gap-5.5 pr-17.5">
+        <div className="hidden sm:grid grid-cols-5 gap-7 w-full">
+            <div className="col-span-2">
+                <ActionButton text="Вернуться" icon={true} onClick={() => router.back()} />
+            </div>
+            <div className="col-span-3 flex gap-5.5 justify-start">
                 <AccentButton text="Написать в Telegram" />
                 <ActionButton text="Написать на Email" />
                 <ActionButton text="Посмотреть кейс на Behance" />
