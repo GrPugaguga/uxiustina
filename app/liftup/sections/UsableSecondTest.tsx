@@ -1,4 +1,5 @@
-import { BlockText, PrivacyText, RowImage } from "@/ui-kit";
+import Image from "next/image";
+import { BlockText, PrivacyText } from "@/ui-kit";
 
 
 export default function UsableSecondTest() {
@@ -23,14 +24,22 @@ export default function UsableSecondTest() {
                 </BlockText>
             </div>
             <div className="col-span-3 bg-grey-bg-primary border border-grey-stroke rounded-[20px] px-15 py-22.5 flex items-center justify-center">
-                <RowImage
-                    images={[
-                        "/image/LiftUp/sections/secondtest/4 1.png",
-                        "/image/LiftUp/sections/secondtest/2 4.png"
-                    ]}
-                    cols={2}
-                    gap={120}
-                />
+                <div className="flex gap-30">
+                    <Image
+                        src="/image/LiftUp/sections/secondtest/4 1.png"
+                        alt="Second test 1"
+                        width={208}
+                        height={450}
+                        className="w-52 h-112.5"
+                    />
+                    <Image
+                        src="/image/LiftUp/sections/secondtest/2 4.png"
+                        alt="Second test 2"
+                        width={208}
+                        height={450}
+                        className="w-52 h-112.5"
+                    />
+                </div>
             </div>
         </div>
     </>
