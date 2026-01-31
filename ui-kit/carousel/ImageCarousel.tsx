@@ -45,13 +45,12 @@ export default function ImageCarousel(props: {
                     </div>
                 )}
 
-                <div className="flex items-center justify-center h-full w-full overflow-hidden">
+                <div className="relative flex items-center justify-center h-full w-full sm:w-230 overflow-hidden">
                     <Image
                         src={props.images[0]}
                         alt={`Image 1`}
-                        width={920}
-                        height={0}
-                        className="w-full h-auto sm:hidden"
+                        fill
+                        className="object-contain sm:hidden"
                     />
                     <Image
                         src={props.images[currentIndex]}
