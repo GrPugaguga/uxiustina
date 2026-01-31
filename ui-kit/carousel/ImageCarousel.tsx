@@ -55,9 +55,8 @@ export default function ImageCarousel(props: {
                     <Image
                         src={props.images[currentIndex]}
                         alt={`Image ${currentIndex + 1}`}
-                        width={920}
-                        height={0}
-                        className="hidden sm:block w-230 h-auto"
+                        fill
+                        className="hidden sm:block object-contain"
                     />
                 </div>
 
