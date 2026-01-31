@@ -42,26 +42,26 @@ export default function UsableSecondTest() {
                     className="col-span-3 bg-grey-bg-primary border border-grey-stroke rounded-[20px] px-15 py-22.5 flex items-center justify-center overflow-hidden relative"
                 >
                     {/* Первый набор картинок */}
-                    <div className="flex gap-30 z-10">
+                    <div className="flex justify-between gap-5 z-10 w-full max-w-134">
                         <Image
                             src="/image/LiftUp/sections/secondtest/4 1.png"
                             alt="Second test 1"
                             width={208}
                             height={450}
-                            className="w-52 h-112.5"
+                            className="w-52 h-auto"
                         />
                         <Image
                             src="/image/LiftUp/sections/secondtest/2 4.png"
                             alt="Second test 2"
                             width={208}
                             height={450}
-                            className="w-52 h-112.5"
+                            className="w-52 h-auto"
                         />
                     </div>
 
                     {/* Второй набор картинок — выезжает снизу */}
                     <motion.div
-                        className="flex gap-30 absolute z-20"
+                        className="flex justify-between gap-5 absolute z-20 left-15 right-15 max-w-134 mx-auto"
                         style={{ y: translateY }}
                     >
                         <Image
@@ -69,14 +69,14 @@ export default function UsableSecondTest() {
                             alt="Second test 3"
                             width={208}
                             height={450}
-                            className="w-52 h-112.5"
+                            className="w-52 h-auto"
                         />
                         <Image
                             src="/image/LiftUp/sections/secondtest/4 1.png"
                             alt="Second test 4"
                             width={208}
                             height={450}
-                            className="w-52 h-112.5"
+                            className="w-52 h-auto"
                         />
                     </motion.div>
                 </div>
