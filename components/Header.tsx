@@ -26,18 +26,18 @@ export default function Header() {
             {/* Desktop Header */}
             <header className="hidden sm:flex bg-grey-bg-light py-3 px-10 rounded-[20px] border border-grey-bg-primary backdrop-blur-[20px] items-center gap-21.5 w-max">
                 <div>
-                    <HeaderLink text={isHomePage ? "Юстина Дзюба" : "На главную"} href="/" />
+                    <HeaderLink text={isHomePage ? "Юстина Дзюба" : "На главную"} href="/" animate />
                 </div>
 
                 <div className="flex items-center gap-5">
-                    <HeaderLink text="Проекты" href="/#projects" onClick={isHomePage ? handleProjectsClick : undefined} />
-                    <HeaderLink text="Behance" href="https://www.behance.net/4582f7ec" external />
-                    <HeaderLink text="CV" href="/cv.pdf" icon={true} external download />
+                    <HeaderLink text="Проекты" href="/#projects" onClick={isHomePage ? handleProjectsClick : undefined} animate />
+                    <HeaderLink text="Behance" href="https://www.behance.net/4582f7ec" external animate />
+                    <HeaderLink text="CV" href="/cv.pdf" icon={true} external download animate />
                 </div>
 
                 <div className="flex items-center">
-                    <HeaderLink text="Telegram" href="https://t.me/uxiustina" external />
-                    <HeaderLink text="Email" href="mailto:kllmvrd@gmail.com" external />
+                    <HeaderLink text="Telegram" href="https://t.me/uxiustina" external animate />
+                    <HeaderLink text="Email" href="mailto:kllmvrd@gmail.com" external animate />
                 </div>
             </header>
 
