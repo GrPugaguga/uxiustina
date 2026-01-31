@@ -22,7 +22,7 @@ export default function Actions() {
             <div className="col-span-3 flex gap-1 justify-between">
                 <AccentButton text="Написать в Telegram" onClick={() => window.open('https://t.me/uxiustina', '_blank')} />
                 <ActionButton text="Написать на Email" onClick={() => window.open('mailto:kllmvrd@gmail.com')} />
-                <ActionButton text="Посмотреть кейс на Behance" shortText="Кейс на Behance" shortTextBelow={1308} onClick={() => window.open('https://www.behance.net/gallery/241636771/UXUI-Mobile-App-LIFT-UP', '_blank')} />
+                <ActionButton text="Посмотреть кейс на Behance" shortText="Кейс на Behance" shortTextBelow={1316} onClick={() => window.open('https://www.behance.net/gallery/241636771/UXUI-Mobile-App-LIFT-UP', '_blank')} />
             </div>
         </div>
       </>
