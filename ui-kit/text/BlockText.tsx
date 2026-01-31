@@ -5,7 +5,7 @@ export default function BlockText(props: {
     return (
         <div className="flex flex-col gap-4 ">
             <div className="sm:w-2/5">
-                <h2 className="text-6 font-semibold leading-6.5 text-black">
+                <h2 className="text-[24px] font-semibold leading-6.5 text-black">
                     {props.title}
                 </h2>
             </div>

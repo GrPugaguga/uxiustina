@@ -7,7 +7,7 @@ export default function AcceptButton(props: {
     return (
         <button
             onClick={props.onClick}
-            className={`${buttonBase} text-black text-3 leading-5 hover:bg-grey-txt-secondary border-grey-stroke bg-background-white px-5 py-3`}
+            className={`${buttonBase} text-black text-[12px] leading-5 hover:bg-grey-txt-secondary border-grey-stroke bg-background-white px-5 py-3`}
         >
             {props.text}
         </button>

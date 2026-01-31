@@ -33,7 +33,7 @@ export default function HeaderLink(props: {
         }
     };
 
-    const className = "group text-black active:text-grey-bg-pressed sm:active:text-grey-txt-secondary sm:active:bg-transparent cursor-pointer flex items-center gap-1 p-2.5 text-5 leading-5.5 sm:text-4 sm:leading-5.5";
+    const className = "group text-black active:text-grey-bg-pressed sm:active:text-grey-txt-secondary sm:active:bg-transparent cursor-pointer flex items-center gap-1 p-2.5 leading-5.5";
 
     if (props.external && props.href) {
         return (
