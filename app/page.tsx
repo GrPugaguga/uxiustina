@@ -21,7 +21,7 @@ export default function Home() {
           <Card
             image="/image/main_LiftUp.png"
             title="LiftUp"
-            description={"Фитнес-приложение с\u00A0умным помощником"}
+            description={"Фитнес\u2011приложение с\u00A0умным помощником"}
             href="/liftup"
             priority
           />
