@@ -1,3 +1,4 @@
+export { default as FirstImage } from "./FirstImage";
 export { default as Context } from "./Context";
 export { default as Persons } from "./Persons";
 export { default as JTBD } from "./JTBD";
