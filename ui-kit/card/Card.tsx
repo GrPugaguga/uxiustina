@@ -7,10 +7,11 @@ export default function Card(props: {
     description: string
     href: string
     priority?: boolean
+    locked?: boolean
 }) {
-    return (
-        <Link href={props.href} className="flex flex-col gap-3">
-            <CardImage src={props.image} alt={props.title} priority={props.priority} />
+    const content = (
+        <>
+            <CardImage src={props.image} alt={props.title} priority={props.priority} locked={props.locked} />
             <div className="flex flex-col gap-1">
                 <h3 className="text-[20px] font-semibold text-black leading-[100%]">
                     {props.title}
@@ -19,6 +20,16 @@ export default function Card(props: {
                     {props.description}
                 </p>
             </div>
+        </>
+    );
+
+    if (props.locked) {
+        return <div className="flex flex-col gap-3">{content}</div>;
+    }
+
+    return (
+        <Link href={props.href} className="flex flex-col gap-3">
+            {content}
         </Link>
-    )
+    );
 }

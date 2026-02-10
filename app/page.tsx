@@ -11,7 +11,7 @@ export default function Home() {
           <h1 className="text-[26px] font-medium leading-7.5 -tracking-[0.52px]">
             <span className="text-black">Привет! Я Юстина, UX/UI дизайнер.</span>
             <br />
-            <span className="text-grey-txt-secondary text-[24px]">Решаю комплексные задачи через пользовательские исследования, аналитику и системный подход в проектировании</span>
+            <span className="text-grey-txt-secondary text-[24px]">{"Решаю комплексные задачи через пользовательские исследования, аналитику и\u00A0системный подход в\u00A0проектировании"}</span>
           </h1>
           <AccentButton text="Написать в Telegram" className="sm:hidden w-full mt-4" />
         </div>
@@ -21,16 +21,17 @@ export default function Home() {
           <Card
             image="/image/main_LiftUp.png"
             title="LiftUp"
-            description="Фитнес-приложение с умным помощником"
+            description={"Фитнес-приложение с\u00A0умным помощником"}
             href="/liftup"
             priority
           />
           <Card
             image="/image/main_LiftUp.png"
-            title="LiftUp"
-            description="Фитнес-приложение с умным помощником"
-            href="/liftup"
+            title="B2B SaaS"
+            description={"Платформа для\u00A0автоматизации маркетинга. Проект под\u00A0NDA"}
+            href="/"
             priority
+            locked
           />
         </div>
       </div>

@@ -6,17 +6,17 @@ export default function Uncentrainty() {
             <div className="sm:col-span-3">
                 <RowImage
                     images={[
-                        "/image/LiftUp/sections/pain/а 1.png",
-                        "/image/LiftUp/sections/pain/а 2.png",
-                        "/image/LiftUp/sections/pain/а 3.png"
+                        "/image/LiftUp/sections/pain/Group 117.png",
+                        "/image/LiftUp/sections/pain/Group 118.png",
+                        "/image/LiftUp/sections/pain/Group 119.png"
                     ]}
                     cols={3}
                     gap={28}
                 />
             </div>
             <div className="sm:col-span-2">
-                <ProblemText problem="Неуверенность при самостоятельных тренировках">
-                    Персонализированные тренировочные планы, адаптированные под цели, уровень и ограничения, с объяснением логики упражнений и последовательности
+                <ProblemText problem={"Неуверенность при\u00A0самостоятельных тренировках"}>
+                    {'Персонализированные тренировочные планы, адаптированные под\u00A0цели, уровень и\u00A0ограничения, с\u00A0объяснением логики упражнений и\u00A0последовательности'}
                 </ProblemText>
             </div>
         </div>

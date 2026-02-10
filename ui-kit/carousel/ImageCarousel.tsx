@@ -9,6 +9,7 @@ export default function ImageCarousel(props: {
     images: string[]
     height: number
     mobileHeight: number
+    noBackground?: boolean
 }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -48,7 +49,7 @@ export default function ImageCarousel(props: {
                     }
                 `
             }} />
-            <div className={`carousel-container-${props.height} w-full bg-grey-bg-primary border border-grey-stroke rounded-[20px] relative flex items-center justify-center p-5`}>
+            <div className={`carousel-container-${props.height} w-full ${props.noBackground ? '' : 'bg-grey-bg-primary'} border border-grey-stroke rounded-[20px] relative flex items-center justify-center p-5`}>
                 {!isSingle && !isFirst && (
                     <div className="hidden sm:block absolute left-4 z-10">
                         <ArrowButton type="left" onClick={handlePrev} />

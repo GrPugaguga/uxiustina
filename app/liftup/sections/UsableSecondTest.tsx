@@ -20,21 +20,21 @@ export default function UsableSecondTest() {
     return (
         <>
             <PrivacyText title="Юзабилити тестирование №2" className="sm:hidden">
-                На этом этапе фокус сместился на визуальное восприятие и приоритетность функций.
+                {"На\u00A0этом этапе фокус сместился на\u00A0визуальное восприятие и\u00A0приоритетность функций."}
                 <br/><br/>
-                Проблемы: Визуальный перегруз цветом, отвлекающий от целевых действий, и неочевидность функции добавления упражнения.
+                {"Проблемы: Визуальный перегруз цветом, отвлекающий от\u00A0целевых действий, и\u00A0неочевидность функции добавления упражнения."}
                 <br/><br/>
-                Решение: Внедрена система точечных акцентов вместо избыточной заливки, усилен визуальный приоритет кнопки добавления упражнения.
+                {"Решение: Внедрена система точечных акцентов вместо избыточной заливки, усилен визуальный приоритет кнопки добавления упражнения."}
             </PrivacyText>
 
             <div className="hidden sm:grid grid-cols-5 gap-7 w-full">
                 <div className="col-span-2">
-                    <BlockText title="Юзабилити тестирование №2">
-                        На этом этапе фокус сместился на визуальное восприятие и приоритетность функций.
+                    <BlockText title={"Юзабилити тестирование №2"}>
+                        {"На\u00A0этом этапе фокус сместился на\u00A0визуальное восприятие и\u00A0приоритетность функций."}
                         <br/><br/>
-                        Проблемы: Визуальный перегруз цветом, отвлекающий от целевых действий, и неочевидность функции добавления упражнения.
+                         {"Проблемы: Визуальный перегруз цветом, отвлекающий от\u00A0целевых действий, и\u00A0неочевидность функции добавления упражнения."}
                         <br/><br/>
-                        Решение: Внедрена система точечных акцентов вместо избыточной заливки, усилен визуальный приоритет кнопки добавления упражнения.
+                        {"Решение: Внедрена система точечных акцентов вместо избыточной заливки, усилен визуальный приоритет кнопки добавления упражнения."}
                     </BlockText>
                 </div>
                 <div
@@ -44,14 +44,14 @@ export default function UsableSecondTest() {
                     {/* Первый набор картинок */}
                     <div className="flex justify-between gap-5 z-10 w-full max-w-134">
                         <Image
-                            src="/image/LiftUp/sections/secondtest/4 1.png"
+                            src="/image/LiftUp/sections/secondtest/11.png"
                             alt="Second test 1"
                             width={208}
                             height={450}
                             className="w-52 h-auto"
                         />
                         <Image
-                            src="/image/LiftUp/sections/secondtest/2 4.png"
+                            src="/image/LiftUp/sections/secondtest/21.png"
                             alt="Second test 2"
                             width={208}
                             height={450}
@@ -65,14 +65,14 @@ export default function UsableSecondTest() {
                         style={{ y: translateY }}
                     >
                         <Image
-                            src="/image/LiftUp/sections/secondtest/2 4.png"
+                            src="/image/LiftUp/sections/secondtest/12.png"
                             alt="Second test 3"
                             width={208}
                             height={450}
                             className="w-52 h-auto"
                         />
                         <Image
-                            src="/image/LiftUp/sections/secondtest/4 1.png"
+                            src="/image/LiftUp/sections/secondtest/22.png"
                             alt="Second test 4"
                             width={208}
                             height={450}

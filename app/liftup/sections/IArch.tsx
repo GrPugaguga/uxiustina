@@ -7,9 +7,10 @@ export default function IArch() {
             Информационная архитектура
         </h2>
         <ImageCarousel
-            images={["/image/LiftUp/sections/iarch/Rectangle (1).png"]}
+            images={["/image/LiftUp/sections/iarch/Group 111.png"]}
             height={650}
             mobileHeight={184}
+            noBackground
         />
     </div>
   );
