@@ -74,7 +74,7 @@ export default function Privacy() {
           <br />{"•\u00A0Возражение против обработки"}
           <br />{"•\u00A0Переносимость данных"}
           <br />{"•\u00A0Отзыв согласия на\u00A0обработку"}
-          <br />{"Для реализации этих прав свяжитесь с\u00A0нами по\u00A0email: kllmvrd@gmail.com"}
+          <br />{"Для реализации этих прав свяжитесь с\u00A0нами по\u00A0email: utairrr@yandex.ru"}
         </PrivacyText>
 
         <PrivacyText title="Конфиденциальность детей">
@@ -86,7 +86,7 @@ export default function Privacy() {
         </PrivacyText>
 
         <PrivacyText title="Контакты">
-          Email: kllmvrd@gmail.com
+          Email: utairrr@yandex.ru
         </PrivacyText>
 
         <ActionButton text="Вернуться" icon={true} onClick={() => router.back()} className="self-start" />

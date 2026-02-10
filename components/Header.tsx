@@ -37,7 +37,7 @@ export default function Header() {
 
                 <div className="flex items-center">
                     <HeaderLink text="Telegram" href="https://t.me/uxiustina" external animate />
-                    <HeaderLink text="Email" href="mailto:kllmvrd@gmail.com" external animate />
+                    <HeaderLink text="Email" href="mailto:utairrr@yandex.ru" external animate />
                 </div>
             </header>
 
@@ -64,7 +64,7 @@ export default function Header() {
                         <HeaderLink text="CV" href="/cv.pdf" icon={true} external download />
                         <HeaderLink text="Behance" href="https://www.behance.net/4582f7ec" external />
                         <HeaderLink text="Telegram" href="https://t.me/uxiustina" external />
-                        <HeaderLink text="Email" href="mailto:kllmvrd@gmail.com" external />
+                        <HeaderLink text="Email" href="mailto:utairrr@yandex.ru" external />
                     </div>
                 </div>
             )}
