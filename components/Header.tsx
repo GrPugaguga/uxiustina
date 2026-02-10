@@ -26,7 +26,7 @@ export default function Header() {
             {/* Desktop Header */}
             <header className="hidden sm:flex bg-grey-bg-light py-3 px-10 rounded-[20px] border border-grey-bg-primary backdrop-blur-[20px] items-center gap-21.5 w-max">
                 <div>
-                    <HeaderLink text={isHomePage ? "Юстина Дзюба" : "На главную"} href="/" animate />
+                    <HeaderLink text={isHomePage ? "Юстина Д." : "На главную"} href="/" animate />
                 </div>
 
                 <div className="flex items-center gap-5">
