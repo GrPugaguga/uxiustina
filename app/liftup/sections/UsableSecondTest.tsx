@@ -19,7 +19,7 @@ export default function UsableSecondTest() {
 
     return (
         <>
-            <PrivacyText title="Юзабилити тестирование №2" className="sm:hidden">
+            <PrivacyText title={"Юзабилити\u00A0тестирование\u00A0№2"} className="sm:hidden ">
                 {"На\u00A0этом этапе фокус сместился на\u00A0визуальное восприятие и\u00A0приоритетность функций."}
                 <br/><br/>
                 {"Проблемы: Визуальный перегруз цветом, отвлекающий от\u00A0целевых действий, и\u00A0неочевидность функции добавления упражнения."}
@@ -29,7 +29,7 @@ export default function UsableSecondTest() {
 
             <div className="hidden sm:grid grid-cols-5 gap-7 w-full">
                 <div className="col-span-2">
-                    <BlockText title={"Юзабилити тестирование №2"}>
+                    <BlockText title={"Юзабилити\u00A0тестирование\u00A0№2"}>
                         {"На\u00A0этом этапе фокус сместился на\u00A0визуальное восприятие и\u00A0приоритетность функций."}
                         <br/><br/>
                          {"Проблемы: Визуальный перегруз цветом, отвлекающий от\u00A0целевых действий, и\u00A0неочевидность функции добавления упражнения."}
