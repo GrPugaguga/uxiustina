@@ -22,6 +22,7 @@ export default function CardImage(props: {
                     alt={props.alt}
                     width={604}
                     height={358}
+                    sizes="(max-width: 640px) 353px, 604px"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-600"
                     priority={props.priority}
                 />
