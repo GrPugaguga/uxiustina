@@ -17,7 +17,7 @@ export default function Home() {
         </div>
 
         {/* Works блок */}
-        <div id="projects" className="flex flex-col sm:flex-row gap-8 items-center">
+        <div id="projects" className="flex flex-col sm:flex-row gap-8 items-center w-88 sm:w-auto">
           <Card
             image="/image/main_LiftUp.png"
             title="LiftUp"
