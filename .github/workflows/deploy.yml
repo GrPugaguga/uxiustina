@@ -14,9 +14,11 @@ jobs:
           host: 155.212.187.158
           username: root
           password: ${{ secrets.SSH_PASSWORD }}
+          command_timeout: 15m
           script: |
+            export CI=true
             cd /var/www/uxiustina
             git pull origin main
-            npm install
+            npm install --prefer-offline
             npm run build
             pm2 restart uxiustina
