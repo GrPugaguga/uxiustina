@@ -1,0 +1,22 @@
+name: Deploy to Beget
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: 155.212.187.158
+          username: root
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+            cd /var/www/uxiustina
+            git pull origin main
+            npm install
+            npm run build
+            pm2 restart uxiustina
