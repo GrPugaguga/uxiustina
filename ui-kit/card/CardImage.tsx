@@ -7,7 +7,7 @@ export default function CardImage(props: {
     locked?: boolean
 }) {
     return (
-        <div className={`w-88.25 h-61.5 sm:w-151 sm:h-89.5 rounded-[20px] border border-grey-stroke overflow-hidden flex items-center justify-center bg-grey-bg-primary ${props.locked ? "cursor-default" : "cursor-pointer"}`}>
+        <div className={`w-88.25 h-61.5 sm:w-151 sm:h-89.5 rounded-[20px] border border-grey-stroke overflow-hidden flex ${props.locked ? "items-center" : "items-end"} justify-center bg-grey-bg-primary ${props.locked ? "cursor-default" : "cursor-pointer"}`}>
             {props.locked ? (
                 <Image
                     src="/svg/lock.svg"
@@ -23,7 +23,7 @@ export default function CardImage(props: {
                     width={604}
                     height={358}
                     sizes="(max-width: 640px) 353px, 604px"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-600"
+                    className="h-[90%] object-contain hover:scale-105 transition-transform duration-600"
                     priority={props.priority}
                 />
             )}
