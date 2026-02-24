@@ -15,7 +15,8 @@
   --color-accent-primary: #0071FF;
   --color-grey-bg-hover: #E6E6E6;
   --color-accent-hover: #005ACC;
-  --color-accent-pressed: #1A7FFF
+  --color-accent-pressed: #1A7FFF;
+  --color-accent-light: #7BB3FA;
 }
 
 html, body {

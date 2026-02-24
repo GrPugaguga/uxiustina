@@ -1,4 +1,5 @@
-import { FirstImage, Context, Persons, JTBD, IArch, DidntEnter, UsableFirstTest, UsableSecondTest, Actions, PainAndSolutions } from "./sections";
+import { Actions } from "../shared";
+import { FirstImage, Context, Persons, JTBD, IArch, DidntEnter, UsableFirstTest, UsableSecondTest, PainAndSolutions } from "./sections";
 
 export default function LiftUp() {
   return (

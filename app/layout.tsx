@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import { PrivacyAndCookies } from "@/ui-kit";
 
 const raleway = Raleway({
-  weight: ["500", "600"],
+  weight: ["400", "500", "600"],
   subsets: ["latin"],
   variable: "--font-raleway",
 });
