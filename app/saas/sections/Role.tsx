@@ -1,0 +1,62 @@
+import Image from "next/image";
+
+function RoleCard({ label, text, isTitle }: { label: string; text: string; isTitle?: boolean }) {
+  return (
+    <div className="flex flex-col gap-4 items-start">
+      <span className="uppercase font-normal text-[16px] leading-6.5 text-grey-txt-primary">{label}</span>
+      {isTitle ? (
+        <span className="font-semibold text-[24px] leading-6.5 text-black">{text}</span>
+      ) : (
+        <span className="font-normal text-[16px] leading-5.25 tracking-[-0.17px] text-black">{text}</span>
+      )}
+    </div>
+  );
+}
+
+function Result({text}: {text: string}) {
+ return (    
+    <div className="flex flex-row gap-3 items-start">
+        <Image src="/svg/result.svg" alt="" width={24} height={24} /> 
+        <span className="font-normal text-[16px] text-black leading-5.25 ">{text}</span>
+    </div>
+  );
+}
+
+function ResultCard({ label, results }: { label: string; results: string[] }) {
+     return (
+    <div className="flex flex-col gap-4 items-start">
+      <span className="uppercase font-semibold text-[16px] leading-6.5 text-grey-txt-secondary">{label}</span>     
+        <div className="flex flex-col gap-3">
+          {results.map((result, index) => (
+            <Result key={index} text={result} />
+          ))}
+        </div>
+    </div>
+  );
+}
+
+export default function Role() {
+
+    const results = [
+        'Спроектированы и стандартизированы UX-сценарии обработки обращений, что позволило автоматизировать до 90% типовых сообщений.', 
+        'Оптимизирована логика обработки диалогов, благодаря чему сократилось среднее время ответа пользователям.',
+        'Создан удобный дашборд мониторинга входящих сообщений, упростивший контроль нагрузки и состояния диалогов.'
+    ]
+
+  return (
+    <div className="grid grid-cols-12 gap-x-5 gap-y-15 rounded-[40px] bg-linear-to-b from-grey-bg-primary to-[#F5F5F500] py-15">
+      <div className="col-start-2 col-span-5">
+        <RoleCard label="Роль" text="Product Designer" isTitle />
+      </div>
+      <div className="col-start-7 col-span-4">
+        <RoleCard label="Контекст" text="Разработка AI-ассистента для обработки входящих сообщений с интеграцией в CRM." />
+      </div>
+      <div className="col-start-2 col-span-4">
+        <RoleCard label="Зона ответственности" text="Вела UX-процесс проекта: от исследования пользовательских потребностей и анализа сценариев до формулирования гипотез, проектирования флоу, логики и UI интерфейса, а также сопровождения решений." />
+      </div>
+      <div className="col-start-7 col-span-5">
+        <ResultCard label="Результаты" results={results}/> 
+      </div>
+    </div>
+  );
+}
