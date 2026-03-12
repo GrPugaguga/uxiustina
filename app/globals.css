@@ -13,11 +13,13 @@
   --color-grey-txt-secondary: #848484;
   --color-grey-bg-pressed: #F0F0F0;
   --color-grey-bg-light: #F5F5F54D;
+  --color-grey-main-tertiary: #B3B3B3;
   --color-accent-primary: #0071FF;
   --color-grey-bg-hover: #E6E6E6;
   --color-accent-hover: #005ACC;
   --color-accent-pressed: #1A7FFF;
   --color-accent-light: #7BB3FA;
+  --color-alert-accent: #F62109;
 }
 
 html, body {

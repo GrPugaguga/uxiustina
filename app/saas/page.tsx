@@ -1,5 +1,5 @@
 import { Actions } from "../shared";
-import { HypothesisCheck, MainDashboard, Note, ProblemAndHypothesis, Research, Role, StagesOfWork} from "./sections";
+import { HypothesisCheck, MainDashboard, Note, ProblemAndHypothesis, Research, Role, StagesOfWork, UXSolutions} from "./sections";
 
 export default function Saas() {
   return (
@@ -10,6 +10,7 @@ export default function Saas() {
       <Research />
       <ProblemAndHypothesis />
       <HypothesisCheck/>
+      <UXSolutions/>
       <Note/>
       <Actions/>
       <div></div>
