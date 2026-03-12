@@ -66,19 +66,19 @@ export default function StagesOfWork() {
         <div className="col-start-1 col-span-12 bg-[url('/svg/setka.svg')] bg-no-repeat bg-size-[100%_100%] mt-15">
             <div className="grid grid-cols-12 gap-x-5 py-5">
               <StageOfWork 
-                  stage='Исследования и гипотезы'
+                  stage={'Исследования и\u00A0гипотезы'}
                   icon_path="/svg/Bulb.svg"
                   className="col-start-1 col-span-4"
                   tasks={taskMap[0]}
               />
               <StageOfWork 
-                  stage='Проектирование и проверка решений' 
+                  stage={'Проектирование и\u00A0проверка решений' }
                   icon_path="/svg/Cone.svg"
                   className="col-start-5 col-span-4 mt-30"
                   tasks={taskMap[1]}
               />
               <StageOfWork 
-                  stage='UI-реализация и развитие решения' 
+                  stage={'UI-реализация и\u00A0развитие решения'} 
                   icon_path="/svg/Retry.svg"
                   className="col-start-9 col-span-4 mt-60"
                   tasks={taskMap[2]}
