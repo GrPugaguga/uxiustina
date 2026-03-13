@@ -24,6 +24,7 @@ export default function Home() {
             description={"Платформа для\u00A0автоматизации маркетинга. Проект под\u00A0NDA"}
             href="/amp"
             priority
+            locked
             fill
           />
           <Card
