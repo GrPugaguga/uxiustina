@@ -4,7 +4,7 @@ import { ActionButton, AccentButton } from "@/ui-kit";
 import { useRouter } from 'next/navigation';
 
 
-export default function Actions() {
+export default function Actions({behance}: {behance?: string}) {
     const router = useRouter()
     return (
       <>
@@ -19,10 +19,15 @@ export default function Actions() {
             <div className="col-span-2">
                 <ActionButton text="Вернуться" icon={true} onClick={() => router.back()} hideTextBelow={1100} />
             </div>
-            <div className="col-span-3 flex justify-start" style={{ gap: 'clamp(4px, 1.5vw, 22px)' }}>
+            <div className={
+                "col-span-3 flex "
+                + (behance ? 'justify-start ' : 'justify-end')
+                } style={{ gap: 'clamp(4px, 1.5vw, 22px)' }}>
                 <AccentButton text={"Написать\u00A0в\u00A0Telegram"} onClick={() => window.open('https://t.me/uxiustina', '_blank')} />
                 <ActionButton text={"Написать\u00A0на\u00A0Email"} onClick={() => window.open('mailto:utairrr@yandex.ru')} />
-                <ActionButton text={"Посмотреть\u00A0кейс\u00A0на\u00A0Behance"} shortText={"Кейс\u00A0на\u00A0Behance"} shortTextBelow={1316} onClick={() => window.open('https://www.behance.net/gallery/241636771/UXUI-Mobile-App-LIFT-UP', '_blank')} />
+                {
+                    behance && <ActionButton text={"Посмотреть\u00A0кейс\u00A0на\u00A0Behance"} shortText={"Кейс\u00A0на\u00A0Behance"} shortTextBelow={1316} onClick={() => window.open(behance, '_blank')} />
+                }
             </div>
         </div>
       </>

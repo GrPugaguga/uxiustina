@@ -17,7 +17,7 @@ export default function LiftUp() {
         <PainAndSolutions />
         <UsableSecondTest />
         <DidntEnter />
-        <Actions />
+        <Actions behance="https://www.behance.net/gallery/241636771/UXUI-Mobile-App-LIFT-UP"/>
         <div></div>
       </div>
     </div>
