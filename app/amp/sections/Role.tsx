@@ -46,10 +46,10 @@ export default function Role() {
   return (
     <div className="grid grid-cols-12 gap-x-5 gap-y-15 rounded-[40px] bg-linear-to-b from-grey-bg-primary to-[#F5F5F500] py-15">
       <div className="col-start-2 col-span-5">
-        <RoleCard label="Роль" text="Product Designer" isTitle />
+        <RoleCard label="Роль" text="UX/UI Designer" isTitle />
       </div>
       <div className="col-start-7 col-span-4">
-        <RoleCard label="Контекст" text={"Разработка AI-ассистента для\u00A0обработки входящих сообщений с\u00A0интеграцией в\u00A0CRM."} />
+        <RoleCard label="Контекст" text={"Разработка AI-ассистента для\u00A0обработки входящих\u00A0сообщений с\u00A0интеграцией в\u00A0CRM."} />
       </div>
       <div className="col-start-2 col-span-4">
         <RoleCard label="Зона ответственности" text={"Вела UX-процесс проекта: от\u00A0исследования пользовательских потребностей и\u00A0анализа сценариев до\u00A0формулирования гипотез, проектирования флоу, логики и\u00A0UI интерфейса, а\u00A0также сопровождения решений."} />
