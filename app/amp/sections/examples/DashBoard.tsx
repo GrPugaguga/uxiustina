@@ -65,7 +65,7 @@ export default function DashBoardExample(){
                         <Card card={card} key={i}/>
                     ))}
                 </div>
-                <Image src="/image/saas/dashBoard1.png" width={1240} height={640} alt="" className="rounded-2xl shadow-[0px_0px_100px_0px_#00000026]"/>
+                <Image src="/image/saas/dashBoard.png" width={1240} height={640} alt="" className="rounded-2xl shadow-[0px_0px_100px_0px_#00000026]"/>
             </div>
         </div>
     )
