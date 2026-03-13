@@ -48,7 +48,7 @@ export default function First(){
 
     return (
         <div className="flex flex-row w-full gap-0">
-            <div className="flex flex-col-reverse w-full mb-5 pl-2">
+            <div className="flex flex-col-reverse w-full mb-8 pl-2">
                 <Image src="/svg/vector_arrow.svg" alt="" width={316} height={84} className="self-end z-10 -mr-2" />
                 <SolutionSpan text="Точка ручного контроля" className=" self-start"/>
             </div>

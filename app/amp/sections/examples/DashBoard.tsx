@@ -58,8 +58,11 @@ export default function DashBoardExample(){
     ]
     return (
         <div className="grid grid-cols-12 gap-x-5 gap-y-15 w-full ">
-            <SolutionSpan text="Устойчивость при росте входящих" className="col-start-6 col-span-7 w-fit "/>
-            <div className="flex flex-row gap-5 col-start-1 col-span-12 w-full " >
+            <div className="flex flex-col gap-0 col-start-7 col-span-7 w-fit ">
+            <SolutionSpan text="Устойчивость при росте входящих" className=""/>
+            <Image src="/svg/vector_dashboard.svg" width={16} height={386} alt="" className="self-center z-10"/>
+            </div>       
+            <div className="flex flex-row gap-5 col-start-1 col-span-12 w-full -mt-80 " >
                 <div className="flex flex-col gap-4">
                     {cards.map((card, i) => (
                         <Card card={card} key={i}/>

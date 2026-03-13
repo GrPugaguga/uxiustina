@@ -46,7 +46,7 @@ export default function First(){
             <Chat messages={messages} messageClassName="max-w-65"/>
             <div className="flex flex-col">
                 <Order order={order} className="self-start"/>
-                <div className="flex flex-row flex-1 items-center">
+                <div className="flex flex-row flex-1 items-center mb-14">
                     <div className="w-82.5">
                         <Image src="/svg/solution_vector.svg" alt="" width={272} height={12} className="-ml-7" /> 
                     </div>
