@@ -19,20 +19,21 @@ export default function Home() {
         {/* Works блок */}
         <div id="projects" className="flex flex-col sm:flex-row gap-8 items-center w-88 sm:w-auto">
           <Card
+            image="/image/ai_pmp.png"
+            title="AI-Powered Marketing Platform"
+            description={"Платформа для\u00A0автоматизации маркетинга. Проект под\u00A0NDA"}
+            href="/amp"
+            priority
+            fill
+          />
+          <Card
             image="/image/main_LiftUp.png"
             title="LiftUp"
             description={"Фитнес\u2011приложение с\u00A0умным помощником"}
             href="/liftup"
             priority
           />
-          <Card
-            image="/image/main_LiftUp.png"
-            title="B2B SaaS"
-            description={"Платформа для\u00A0автоматизации маркетинга. Проект под\u00A0NDA"}
-            href="/"
-            priority
-            locked
-          />
+
         </div>
       </div>
     </div>

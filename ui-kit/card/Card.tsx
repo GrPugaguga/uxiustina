@@ -8,10 +8,11 @@ export default function Card(props: {
     href: string
     priority?: boolean
     locked?: boolean
+    fill?: boolean
 }) {
     const content = (
         <>
-            <CardImage src={props.image} alt={props.title} priority={props.priority} locked={props.locked} />
+            <CardImage src={props.image} alt={props.title} priority={props.priority} locked={props.locked} fill={props.fill} />
             <div className="flex flex-col gap-1">
                 <h3 className="text-[20px] font-semibold text-black leading-[100%]">
                     {props.title}
