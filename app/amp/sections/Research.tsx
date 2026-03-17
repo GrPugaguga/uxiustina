@@ -65,7 +65,7 @@ function PopUp({ url, onClose }: { url: string; onClose: () => void }) {
                     className="absolute -top-15 right-0 cursor-pointer"
                     onClick={handleClose}
                 >
-                    <Image src="/svg/close.svg" alt="Close" width={35} height={35} />
+                    <Image src="/svg/close.svg" alt="Close" width={24} height={24} />
                 </button>
                 <Image
                     src={url}
