@@ -30,7 +30,7 @@ function Title({title, className = ''} : {title: string, className?: string}){
 function HypotheseText({text, className = ''}: {text: string, className?: string}){
   return (
     <div className={"rounded-2xl px-8 py-5 gap-5 justify-self-start " + className}>
-      <span className="text-[16px] font-normal tracking-[-0.17px] text-black">{text}</span>
+      <span className="text-[16px]  tracking-[-0.17px] text-black">{text}</span>
     </div>
   )
 }
@@ -44,13 +44,13 @@ function Table({ hypothesis }: { hypothesis: IHypothese[] }){
         <Title title="Вывод" className="col-start-7 col-span-3"/>
         <Title title="UX-решение" className="col-start-10 col-span-3"/>
       </div>
-      <div className="w-full grid grid-cols-12 gap-x-5 border-b-3 border-grey-bg-primary">
+      <div className="w-full grid grid-cols-12 gap-x-5 border-b-3 border-grey-bg-primary font-normal">
         <HypotheseText text={hypothesis[0]?.aspect} className="col-start-1 col-span-3 font-medium "/>
         <HypotheseText text={hypothesis[0]?.observation} className="col-start-4 col-span-3"/>
         <HypotheseText text={hypothesis[0]?.conclusion} className="col-start-7 col-span-3"/>
         <HypotheseText text={hypothesis[0]?.solution} className="col-start-10 col-span-3"/>
       </div>
-      <div className="w-full grid grid-cols-12 gap-x-5">
+      <div className="w-full grid grid-cols-12 gap-x-5 font-normal">
         <HypotheseText text={hypothesis[1]?.aspect} className="col-start-1 col-span-3 font-medium"/>
         <HypotheseText text={hypothesis[1]?.observation} className="col-start-4 col-span-3"/>
         <HypotheseText text={hypothesis[1]?.conclusion} className="col-start-7 col-span-3"/>
