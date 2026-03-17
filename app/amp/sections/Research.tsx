@@ -9,7 +9,7 @@ function ResearchCard({ label, text, className='', onClick }: { label: string; t
                 <span className="font-medium text-[20px] text-background-white">{label}</span>
                 <span className="font-medium text-[16px] tracking-[-0.17px] leading-5.25 text-accent-light">{text}</span>
             </div>
-            <div className="flex flex-row justify-end"><Image src="/svg/research.svg" alt="" width={32} height={32} /></div>
+            <div className="flex flex-row justify-end"><Image src="/svg/research.svg" alt="" width={24} height={24} /></div>
         </div>
     )
 }
@@ -60,7 +60,7 @@ function PopUp({ url, onClose }: { url: string; onClose: () => void }) {
             }}
             onClick={handleClose}
         >
-            <div className="relative" onClick={(e) => e.stopPropagation()}>
+            <div className="relative w-full max-w-360 px-25" onClick={(e) => e.stopPropagation()}>
                 <button
                     className="absolute -top-20 -right-20 cursor-pointer"
                     onClick={handleClose}
@@ -72,7 +72,7 @@ function PopUp({ url, onClose }: { url: string; onClose: () => void }) {
                     alt=""
                     width={1200}
                     height={0}
-                    style={{ height: 'auto', width: '1200px' }}
+                    style={{ height: 'auto', width: '100%' }}
                 />
             </div>
         </div>
