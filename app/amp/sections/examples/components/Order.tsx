@@ -15,7 +15,7 @@ function Status({type, status}: Pick<IOrder, 'type' | 'status'>){
 
 function DataSpan ({title, data}: {title:string, data: string | number}){
     return (
-        <div className="flex flex-row text-[12px] font-medium"> 
+        <div className="flex flex-row text-[13px] font-medium"> 
             <span className="text-grey-main-tabbar">{title}</span>
             <span className="text-black">{data}</span>
         </div>

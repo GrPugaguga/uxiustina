@@ -8,13 +8,13 @@ function ChatMessage({ message, className }: { message: IChatMessage, className:
             (message.role == 'client' ? 'flex flex-row self-start ' : 'flex flex-row-reverse self-end ') 
             + 'gap-2'}>
                 <div className={"gap-2.5 rounded-2xl whitespace-pre-line  leading-none "
-                     + (message.role =='client' ? 'bg-grey-bg-primary text-black ': 'bg-accent-primary text-white ' ) 
+                     + (message.role =='client' ? 'bg-[#F3F4F7] border border-[#F3F4F7] text-black ': 'bg-[linear-gradient(180deg,#465AFF_0%,#3762FF_100%)] border border-[#E5E5E5] text-white ' ) 
                      + (message.url ? '' : 'px-4 py-3 pr-5 ')
-                     + className
+                     + className + ' ' + message.className
                      }>
                         {message.url 
                         ? <Image src={message.url} alt="" width={172} height={172}/>
-                        :<span className="text-xs font-normal">{message.message}</span>}
+                        :<span className="text-[12px] font-normal">{message.message}</span>}
                 </div>
                 <span className="text-[8px] text-grey-main-tabbar font-normal self-end">{message.time}</span>
         </div>
@@ -37,7 +37,7 @@ export default function Chat({messages, className='', messageClassName = ''}: {m
                 (<ChatMessage message={m} key={index} className={messageClassName}/>))
                 }
             </div>
-            <div className="flex items-center justify-center text-center text-xs font-medium text-white rounded-xl w-full bg-[#666666] px-4 py-2 ">
+            <div className="flex items-center justify-center text-center text-[12px] font-medium text-white rounded-xl w-full bg-[#666666] px-4 py-2 ">
                Взять в работу 
             </div>
         </div>

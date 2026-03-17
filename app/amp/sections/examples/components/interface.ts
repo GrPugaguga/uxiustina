@@ -4,6 +4,7 @@ export interface IChatMessage {
     time: string,
     message: string,
     url?: string
+    className?: string
 }
 
 export interface IOrder {

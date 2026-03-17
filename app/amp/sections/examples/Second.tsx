@@ -11,12 +11,15 @@ export default function First(){
         {
             role: 'client',
             message: 'Здравствуйте. Я получила букет, и цветы завяли через несколько часов. Это вообще нормально?',
-            time: '19:22'
+            time: '19:22',
+            className:' w-70'
         },
         {
             role: 'admin',
             message: `Нам очень жаль, что так произошло 🌿Пожалуйста,\u00A0пришлите\u00A0фото\u00A0букета,\u00A0чтобы мы могли разобраться.`,
             time: '19:23',
+            className:' w-74'
+
         },
         {
             role: 'client',
@@ -27,7 +30,8 @@ export default function First(){
         {
             role: 'admin',
             message: 'Спасибо за фото.\nЯ передаю обращение менеджеру —\nон свяжется с вами в ближайшее\nвремя.',
-            time: '19:29'
+            time: '19:29',
+            className:' w-65'
         }
     ]
 
@@ -53,7 +57,7 @@ export default function First(){
                 <SolutionSpan text="Точка ручного контроля" className=" self-start"/>
             </div>
             <div className="flex flex-row gap-5 ml-auto">
-                <Chat messages={messages} messageClassName="max-w-73"/>
+                <Chat messages={messages} />
                 <Order order={order} prevOrder={prevOrder} className="self-start"/>
             </div>
         </div>

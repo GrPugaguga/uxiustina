@@ -22,7 +22,7 @@ interface IHypothese {
 function Title({title, className = ''} : {title: string, className?: string}){
   return(
     <div className={"rounded-2xl px-8 py-5 gap-5 justify-center" + className}>
-      <span className="text-xl font-medium text-grey-menu-dark">{title}</span>
+      <span className="text-[20px] font-medium text-grey-menu-dark">{title}</span>
     </div>
   )
 }
