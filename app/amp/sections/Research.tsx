@@ -52,7 +52,7 @@ function PopUp({ url, onClose }: { url: string; onClose: () => void }) {
 
     return (
         <div
-            className="fixed inset-0 z-50 flex items-center justify-center transition-opacity duration-300"
+            className="fixed inset-0 z-50 flex items-start justify-center transition-opacity duration-300"
             style={{
                 background: '#48484880',
                 backdropFilter: 'blur(10px)',
@@ -60,9 +60,9 @@ function PopUp({ url, onClose }: { url: string; onClose: () => void }) {
             }}
             onClick={handleClose}
         >
-            <div className="relative w-full max-w-300 px-25" onClick={(e) => e.stopPropagation()}>
+            <div className="relative w-full max-w-300 px-25 pt-50 items-start" onClick={(e) => e.stopPropagation()}>
                 <button
-                    className="absolute -top-15 right-0 cursor-pointer"
+                    className="absolute top-35 right-0 cursor-pointer"
                     onClick={handleClose}
                 >
                     <Image src="/svg/close.svg" alt="Close" width={24} height={24} />
