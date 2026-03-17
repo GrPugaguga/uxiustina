@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 
 function ResearchCard({ label, text, className='', onClick }: { label: string; text: string; className?: string, onClick: () => void }) {
     return (
-        <div className={"flex flex-col h-60 justify-between px-8 py-7 rounded-[20px] bg-linear-to-b from-[#0076FF] to-[#007EFF] cursor-pointer " + className} onClick={onClick}>
+        <div className={"flex flex-col h-60 justify-between px-7 py-6 rounded-[20px] bg-linear-to-b from-[#0076FF] to-[#007EFF] cursor-pointer " + className} onClick={onClick}>
             <div className="flex flex-col gap-2.5 items-start">
                 <span className="font-medium text-[20px] text-background-white">{label}</span>
                 <span className="font-medium text-[16px] font-sf tracking-[-0.17px] leading-5.25 text-accent-light">{text}</span>
@@ -16,7 +16,7 @@ function ResearchCard({ label, text, className='', onClick }: { label: string; t
 
 function InfoCard({ label, text, className='' }: { label: string; text: string; className?: string }) {
     return (
-        <div className={"flex flex-col h-27.5 justify-between px-8 py-7 rounded-[20px] bg-linear-to-b from-[#0076FF] to-[#007EFF] " + className}>
+        <div className={"flex flex-col h-27.5 justify-between px-7 py-6 rounded-[20px] bg-linear-to-b from-[#0076FF] to-[#007EFF] " + className}>
             <div className="flex flex-col gap-2.5 items-start">
                 <span className="font-medium text-[20px] text-background-white">{label}</span>
                 <span className="font-medium text-[16px] font-sf tracking-[-0.17px] leading-5.25 text-accent-light">{text}</span>
