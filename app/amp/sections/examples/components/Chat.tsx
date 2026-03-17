@@ -24,7 +24,7 @@ function ChatMessage({ message, className }: { message: IChatMessage, className:
 
 export default function Chat({messages, className='', messageClassName = ''}: {messages: IChatMessage[], className?: string, messageClassName?: string}){
     return (
-        <div className={"flex flex-col bg-[#ffffff] shadow-[0px_0px_100px_0px_#0000001A] rounded-2xl w-107 px-5 py-6 gap-6 "+ className}>
+        <div className={"flex flex-col font-sf bg-[#ffffff] shadow-[0px_0px_100px_0px_#0000001A] rounded-2xl w-107 px-5 py-6 gap-6 "+ className}>
             <div className="flex flex-row gap-25">
                 <div className="flex flex-row gap-2 items-center">
                     <Image src="/svg/chat_sort.svg" alt="" width={16} height={16} />

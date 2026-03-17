@@ -7,7 +7,7 @@ function RoleCard({ label, text, isTitle }: { label: string; text: string; isTit
       {isTitle ? (
         <span className="font-semibold text-[24px] leading-6.5 text-black">{text}</span>
       ) : (
-        <span className="font-normal text-[16px] leading-5.25 tracking-[-0.17px] text-black">{text}</span>
+        <span className="font-normal font-sf text-[16px] leading-5.25 tracking-[-0.17px] text-black">{text}</span>
       )}
     </div>
   );
@@ -26,7 +26,7 @@ function ResultCard({ label, results }: { label: string; results: string[] }) {
      return (
     <div className="flex flex-col gap-4 items-start">
       <span className="uppercase font-semibold text-[16px] leading-6.5 text-grey-txt-secondary">{label}</span>     
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 font-sf">
           {results.map((result, index) => (
             <Result key={index} text={result} />
           ))}

@@ -109,7 +109,7 @@ export default function HypothesisCheck() {
   ]
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full font-sf">
       <div className="absolute left-1/2 -translate-x-1/2 w-screen h-full rounded-[40px] bg-grey-bg-primary" />
         <div className="relative grid grid-cols-12 gap-x-5 gap-y-15 py-20 bg-grey-bg-primary">
           <span className="col-start-1 col-span-3 font-semibold text-[24px] leading-6.5 text-black">Проверка гипотез</span>

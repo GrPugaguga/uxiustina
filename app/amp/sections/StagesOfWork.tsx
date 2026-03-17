@@ -64,7 +64,7 @@ export default function StagesOfWork() {
       <BlockTitle text={'Этапы работы'} className="col-start-1 col-span-12"/>
 
         <div className="col-start-1 col-span-12 bg-[url('/svg/setka.svg')] bg-no-repeat bg-size-[100%_100%] mt-15">
-            <div className="grid grid-cols-12 gap-x-5 py-5">
+            <div className="grid grid-cols-12 gap-x-5 py-5 font-sf">
               <StageOfWork 
                   stage={'Исследования и\u00A0гипотезы'}
                   icon_path="/svg/Bulb.svg"

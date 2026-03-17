@@ -46,7 +46,7 @@ function PrevOrderData({ order, className = '' }: {order: IOrder, className?: st
 
 export default function Order({order, className = '', prevOrder }: { order: IOrder, className?: string, prevOrder?: IOrder} ){
     return (
-        <div className={"flex flex-col w-82.5 px-5 py-6 gap-8 bg-[#ffffff] shadow-[0px_0px_100px_0px_#0000001A] rounded-2xl " + className} >
+        <div className={"flex flex-col w-82.5 px-5 py-6 gap-8 font-sf bg-[#ffffff] shadow-[0px_0px_100px_0px_#0000001A] rounded-2xl " + className} >
             <Status type={order.type} status={order.status}/>
             <div className="flex flex-col px-4 gap-8">
                 <OrderData order={order}/>

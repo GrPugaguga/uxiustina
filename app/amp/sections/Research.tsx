@@ -7,7 +7,7 @@ function ResearchCard({ label, text, className='', onClick }: { label: string; t
         <div className={"flex flex-col h-60 justify-between px-8 py-7 rounded-[20px] bg-linear-to-b from-[#0076FF] to-[#007EFF] cursor-pointer " + className} onClick={onClick}>
             <div className="flex flex-col gap-2.5 items-start">
                 <span className="font-medium text-[20px] text-background-white">{label}</span>
-                <span className="font-medium text-[16px] tracking-[-0.17px] leading-5.25 text-accent-light">{text}</span>
+                <span className="font-medium text-[16px] font-sf tracking-[-0.17px] leading-5.25 text-accent-light">{text}</span>
             </div>
             <div className="flex flex-row justify-end"><Image src="/svg/research.svg" alt="" width={24} height={24} /></div>
         </div>
@@ -19,7 +19,7 @@ function InfoCard({ label, text, className='' }: { label: string; text: string; 
         <div className={"flex flex-col h-27.5 justify-between px-8 py-7 rounded-[20px] bg-linear-to-b from-[#0076FF] to-[#007EFF] " + className}>
             <div className="flex flex-col gap-2.5 items-start">
                 <span className="font-medium text-[20px] text-background-white">{label}</span>
-                <span className="font-medium text-[16px] tracking-[-0.17px] leading-5.25 text-accent-light">{text}</span>
+                <span className="font-medium text-[16px] font-sf tracking-[-0.17px] leading-5.25 text-accent-light">{text}</span>
             </div>
         </div>
     )

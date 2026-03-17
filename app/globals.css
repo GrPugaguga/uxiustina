@@ -27,6 +27,8 @@
   --color-state-success-txt: #1D5941;
   --color-state-error-bg: #FDF3F2;
   --color-state-error-txt: #8C2F2A;
+
+  --font-sf: -apple-system, BlinkMacSystemFont, "Raleway", sans-serif;
 }
 
 html, body {

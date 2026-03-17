@@ -4,7 +4,7 @@ function Hypothesis({ number, text, className }: { number: number; text: string;
   return (
     <div className={`flex flex-col  p-8 rounded-2xl gap-5 bg-linear-to-l from-grey-bg-primary to-[#F5F5F500] ${className ?? ""}`}>
       <span className="text-[20px] font-medium text-grey-menu-dark">Гипотеза {number}</span>
-      <div className="text-[16px] font-medium ">
+      <div className="text-[16px] font-medium font-sf">
         {text}
       </div>
     </div>
@@ -19,8 +19,8 @@ function Problem() {
         <div className="relative flex text-grey-menu-dark">
           <span className="text-[20px] font-medium">Проблема</span>
         </div>
-        <span className="text-[16px] text-grey-text-dark font-medium">{"Текущая модель обработки входящих сообщений\u00A0не\u00A0масштабируется при росте нагрузки\u00A0и\u00A0приводит\u00A0к\u00A0задержкам\u00A0в\u00A0пиковые"} <br /> {"периоды."}</span>
-        <span className="text-[16px] text-grey-text-dark font-medium">{"При этом автоматизация воспринимается как"}<br/> {"риск\u00A0из-за\u00A0отсутствия\u00A0прозрачного контроля."}</span>
+        <span className="text-[16px] font-sf text-grey-text-dark font-medium">{"Текущая модель обработки входящих сообщений\u00A0не\u00A0масштабируется при росте нагрузки\u00A0и\u00A0приводит\u00A0к\u00A0задержкам\u00A0в\u00A0пиковые"} <br /> {"периоды."}</span>
+        <span className="text-[16px] font-sf text-grey-text-dark font-medium">{"При этом автоматизация воспринимается как"}<br/> {"риск\u00A0из-за\u00A0отсутствия\u00A0прозрачного контроля."}</span>
       </div>
     </div>
   );

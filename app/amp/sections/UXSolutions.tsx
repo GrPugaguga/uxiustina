@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function Status({isAlert=false}: { isAlert?: boolean}){
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row font-sf">
       <div className="w-107 bg-white flex flex-col gap-4 p-5 rounded-xl shadow-[0px_0px_100px_0px_#0000001A]">
         <div className="flex flex-row justify-between">
           <span className="text-black text-[16px] font-semibold">Требуют внимания</span>
