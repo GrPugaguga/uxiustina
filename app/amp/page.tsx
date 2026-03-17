@@ -3,7 +3,11 @@ import { DashBoardExample, FirstExample, HypothesisCheck, MainDashboard, Note, P
 
 export default function Saas() {
   return (
-    <div className="min-h-screen pt-40 gap-30 bg-background-white flex flex-col items-center">
+    <>
+    <div className="min-h-screen flex md:hidden items-center justify-center bg-background-white">
+      <span className="font-semibold text-[24px] leading-6.5 text-black">Мобильная версия в разработке</span>
+    </div>
+    <div className="min-h-screen pt-40 gap-30 bg-background-white hidden md:flex flex-col items-center">
       <MainDashboard/>
       <Role/>
       <StagesOfWork/>
@@ -18,5 +22,6 @@ export default function Saas() {
       <Actions/>
       <div></div>
     </div>
+    </>
   );
 }
