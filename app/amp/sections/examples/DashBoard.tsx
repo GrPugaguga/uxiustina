@@ -11,7 +11,7 @@ interface ICard {
 
 function Card({card}: {card:ICard}){
     return (
-        <div className="flex flex-col rounded-xl bg-white shadow-[0px_0px_100px_0px_#0000001A] w-74 h-36 justify-between px-4 py-3">
+        <div className="flex flex-col rounded-xl font-sf bg-white shadow-[0px_0px_100px_0px_#0000001A] w-74 h-36 justify-between px-4 py-3">
             <div className="flex flex-row justify-between">
                 <span className="text-black text-[14px] font-semibold">{card.title}</span>
                 <Image src={card.svg} width={20} height={20} alt=""/>

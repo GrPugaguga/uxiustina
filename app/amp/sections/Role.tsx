@@ -17,7 +17,7 @@ function Result({text}: {text: string}) {
  return (    
     <div className="flex flex-row gap-3 items-start">
         <Image src="/svg/result.svg" alt="" width={24} height={24} /> 
-        <span className="font-normal text-[16px] text-black leading-5.25 ">{text}</span>
+        <span className="font-normal text-[16px] text-black leading-5.25 tracking-[-0.17px] ">{text}</span>
     </div>
   );
 }

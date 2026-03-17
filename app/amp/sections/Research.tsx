@@ -97,7 +97,7 @@ export default function Research() {
     <div className="flex flex-col gap-15 w-full ">
         <span className="font-semibold text-[24px] leading-6.5 text-black">Первичные исследования</span>
         <div className="grid grid-cols-12 gap-x-5 ">
-            <ResearchCard label="Глубинное интервью" text="10 респондентов" className="col-start-1 col-span-4" onClick={() => openPopup('/image/saas/research/1.png')}/>
+            <ResearchCard label="Глубинные интервью" text="10 респондентов" className="col-start-1 col-span-4" onClick={() => openPopup('/image/saas/research/1.png')}/>
             <ResearchCard label="Количественный опрос" text="140 респондентов" className="col-start-5 col-span-4" onClick={() => openPopup('/image/saas/research/2.png')}/>
             <div className="flex flex-col gap-5 col-start-9 col-span-4">
                 <InfoCard label="Анализ доп. контекста" text="Более 120 сообщений"/>

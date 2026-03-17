@@ -30,7 +30,7 @@ export default function Chat({messages, className='', messageClassName = ''}: {m
                     <Image src="/svg/chat_sort.svg" alt="" width={16} height={16} />
                     <span className="font-medium text-[12px] text-grey-main-tabbar">Назад</span> 
                 </div>
-                <span className="text-[14px] font-semibold text-black">AminaNa</span>
+                <span className="text-[14px] tracking-[-0.02px] font-semibold text-black">AminaNa</span>
             </div>
             <div className="flex flex-col gap-4">
                 {messages.map((m, index) => 
