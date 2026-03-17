@@ -9,6 +9,8 @@ export default function MainDashboard() {
         width={1240}
         height={882}
         className="rounded-2xl shadow-[0px_0px_100px_0px_#00000026] border border-[#E2E2E2]"
+        priority
+        quality={100}
       />
     </div>
   );

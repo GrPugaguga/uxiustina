@@ -60,9 +60,9 @@ function PopUp({ url, onClose }: { url: string; onClose: () => void }) {
             }}
             onClick={handleClose}
         >
-            <div className="relative w-full max-w-360 px-25" onClick={(e) => e.stopPropagation()}>
+            <div className="relative w-full max-w-300 px-25" onClick={(e) => e.stopPropagation()}>
                 <button
-                    className="absolute -top-20 -right-20 cursor-pointer"
+                    className="absolute -top-15 right-0 cursor-pointer"
                     onClick={handleClose}
                 >
                     <Image src="/svg/close.svg" alt="Close" width={35} height={35} />
@@ -70,9 +70,11 @@ function PopUp({ url, onClose }: { url: string; onClose: () => void }) {
                 <Image
                     src={url}
                     alt=""
-                    width={1200}
+                    width={1440}
                     height={0}
                     style={{ height: 'auto', width: '100%' }}
+                    priority
+                    quality={90}
                 />
             </div>
         </div>

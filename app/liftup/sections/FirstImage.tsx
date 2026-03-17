@@ -9,6 +9,7 @@ export default function FirstImage() {
         width={471}
         height={923}
         className="absolute w-[29%] h-auto left-[1%] top-[1%]"
+        priority
       />
       <Image
         src="/image/LiftUp/sections/first/Group 115.png"
@@ -16,6 +17,7 @@ export default function FirstImage() {
         width={471}
         height={923}
         className="absolute w-[29%] h-auto left-[35.5%] top-[8.5%]"
+        priority
       />
       <Image
         src="/image/LiftUp/sections/first/Group 116.png"
@@ -23,6 +25,7 @@ export default function FirstImage() {
         width={471}
         height={923}
         className="absolute w-[29%] h-auto left-[70%] top-[17%]"
+        priority
       />
     </div>
   );
